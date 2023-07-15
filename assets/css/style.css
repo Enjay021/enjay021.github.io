@@ -121,7 +121,7 @@ img{
 }
 .btn-brand{
     background-color: white;
-    border-color: var(--color-heading);
+    border-color: 2px var(--color-heading);
     color: var(--color-base);
 }
 
