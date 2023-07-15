@@ -120,16 +120,16 @@ img{
     font-weight: 700;
 }
 .btn-brand{
-    background-color: var(--color-brand);
-    border-color: var(--color-brand);
+    background-color: white;
+    border-color: var(--color-heading);
     color: var(--color-base);
 }
 
 .btn-brand:hover,
 .btn-brand:focus{
-    background-color: var(--color-brand);
+    background-color: var(--color-heading);
     color: white;
-    border-color: var(--color-brand);
+    border-color: var(--color-heading);
 }
 
 .link-custom{
