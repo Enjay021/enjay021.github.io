@@ -147,7 +147,7 @@ img{
     transition: all 0.4s ease;
 }
 .link-custom:hover{
-    color: var(--color-brand);
+    color: var(--color-body);
 }
 .link-custom:hover::after{
     width: 100%;
