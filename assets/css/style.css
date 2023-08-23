@@ -42,7 +42,7 @@ img{
 }
 
 .text-brand{
-    color: var(--color-brand);
+    color: var(--color-body);
 }
 
 .bg-base{
