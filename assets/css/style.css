@@ -123,8 +123,13 @@ img{
 
     }
     .navbar-brand img{
-        border: 8px solid var(--color-brand);
+        /*border: 8px solid var(--color-brand);*/
+	border-width: 8px;
+ 	border-style: solid;
+  	border-image: linear-gradient(to right, darkblue, darkorchid) 1;    
     }
+
+	
 
     /*CONTENT WRAPPER*/
     #content-wrapper{
