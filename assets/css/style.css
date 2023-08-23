@@ -124,10 +124,7 @@ img{
     }
     .navbar-brand img{
         /*border: 8px solid var(--color-brand);*/
-	background: linear-gradient(white, white) padding-box,
-        linear-gradient(to right, darkblue, darkorchid) border-box;
- 	border-radius: 50em;
-  	border: 8px solid transparent;   
+	border: 8px solid linear-gradient(to right, darkblue, darkorchid);
     }
 
 	
