@@ -127,8 +127,6 @@ img{
 	border: 8px solid linear-gradient(to right, darkblue, darkorchid);
     }
 
-	
-
     /*CONTENT WRAPPER*/
     #content-wrapper{
         padding-left: var(--sidebar-width);
