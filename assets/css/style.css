@@ -124,6 +124,7 @@ img{
     }
     .navbar-brand img{
         /*border: 8px solid var(--color-brand);*/
+	border-radius: 100em;
 	border-width: 8px;
  	border-style: solid;
   	border-image: linear-gradient(to right, darkblue, darkorchid) 1;    
