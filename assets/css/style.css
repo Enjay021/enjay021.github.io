@@ -80,7 +80,7 @@ img{
 
 /*NAVBAR */
 .navbar{
-    background-color: var(--color-base);
+    background-color: var(--color-heading);
 }
 .navbar .nav-link{
     font-weight: 700;
