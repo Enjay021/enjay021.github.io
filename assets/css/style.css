@@ -78,6 +78,15 @@ img{
 
 }
 
+#bg-color-animation{
+    background: red;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {background-color: #525252;}
+  to {background-color: #010866;}
+}
+
 /*NAVBAR */
 .navbar{
     background-color: var(--color-heading);
