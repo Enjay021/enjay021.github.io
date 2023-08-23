@@ -81,9 +81,7 @@ img{
 
 #bg-color-animation{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 100% 100%;
 	animation: gradient 5s ease infinite;
-	height: 100%;
 }
 @keyframes gradient {
 	0% {
