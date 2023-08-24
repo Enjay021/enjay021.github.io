@@ -415,22 +415,23 @@
                     <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
                         <form action="#" method="post" class="row g-lg-3 gy-3">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="Enter your name" required>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                             </div>
                             <div class="form-group col-12">
-                                <input type="text" class="form-control" placeholder="Enter subject" required>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
                             </div>
                             <div class="form-group col-12">
                                 <textarea id="message" name="" rows="4" class="form-control" placeholder="Enter your message" required></textarea>
                             </div>
                             <div class="form-group col-12 d-grid">
-                                <button type="submit" class="btn btn-brand"> Submit Now</button>
+                                <button type="submit" id="btn" class="btn btn-brand"> Submit Now</button>
                             </div>
                         </form>
                     </div>
+                    
                  </div>
 
             </div>
@@ -464,5 +465,29 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click',function(e){
+            e.preventDefault()
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+            var body = 'name: ' + name + '<br/> email: ' + email + '<br/>
+            subject: ' + subject + '<br/> message: ' + message;
+            
+
+            Email.send({
+                SecureToken : "96efcf4b-7abf-4023-b7f0-9e8161668d94",
+                To : 'enjayantonio@gmail.com',
+                From : "enjayantonio@gmail.com",
+                Subject : "Contact message",
+                Body : body
+            }).then(
+              message => alert(message)
+            );
+        })
+    </script>
 </body>
 </html>
