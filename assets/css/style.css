@@ -123,7 +123,7 @@ img{
 
     }
     .navbar-brand img{
-        border: 8px solid var(--color-heading);
+        border: 8px solid var(--color-body);
     }
 
     /*CONTENT WRAPPER*/
